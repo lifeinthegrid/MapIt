@@ -1,0 +1,290 @@
+/*!
+ * MapIt (jQuery powered google map) Plugin
+ * @requires jQuery v1.6.2 or later
+ * @requires jQuery v1.8.12 or later
+ * 
+ * Documentation:
+ * 		http://www.lifeinthegrid.com/mapit
+ *
+ * Copyright 2011-2012 Cory Lamle, Ryan Heideman <cory@lifeinthegrid.com, ryan@lifeinthegrid.com>
+ * 
+ * Dual licensed under the MIT licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html 
+ */
+ 
+.mapit
+{
+    height: 100%;
+}
+.mapit-title
+{
+    width: 100%;
+    padding:0px; 
+	font-size:18px ;
+	margin:0px 0px 5px 0px;
+	box-shadow: 0 8px 6px -6px #777;
+}
+.mapit-title label
+{
+    padding:3px 3px 3px 6px;
+    display:inline-block;
+}
+.mapit-content
+{
+    height: 500px;
+    word-wrap: break-word;
+}
+.mapit-navigation 
+{
+	width:20% !important;
+	float:left;
+	height: 100%;
+}
+.mapit-accordion 
+{
+}
+.mapit-accordion-link
+{
+	display: block;
+	padding:3px;
+}
+.mapit-accordion-link-sublink
+{
+    padding-left: 15px;
+    font-size: 0.8em;
+}
+.mapit-accordion .ui-accordion-content
+{
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.mapit-map-content
+{
+	width: 80%;
+	float:left;
+	height: 100%;
+}
+.mapit-map-content
+{
+    width: 60%;
+}
+.mapit-embed
+{
+	height: 100%;
+}
+
+
+/* ============================================================================
+MAPIT-SEARCH: This controls the layout of the search box and results
+============================================================================ */
+div.mapit-search-content 
+{
+	background-color:#fff;
+	border: solid 1px #d0d0d0;
+	border-top-width: 2px;
+	border-left-width: 2px;
+	padding:0px 0px 0px 3px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-image:url('images/search.png');
+	background-repeat:no-repeat;
+	background-position:3px;
+	padding-left:25px;
+	margin: 3px;
+}
+div.mapit-search-content input 
+{
+    border: 0px none;
+	color:silver;
+	-webkit-appearance: none;
+}
+.mapit-search-text-active
+{
+	color:black !important;
+}
+.mapit-search-clear
+{
+    float: right;
+    margin: 3px 3px 0px 0px;
+    *margin-top: -18px; /* IE7 */
+    visibility: hidden;
+    height: 15px;
+    width: 15px;
+}
+.mapit-search-clear a
+{
+    height: 15px;
+    width: 15px;
+    display: block;
+	background:url('images/clear.png') no-repeat 0px 0px;
+	border-style: none;
+	cursor: pointer;
+}
+.mapit-search-results
+{
+    height: 100%;
+    margin-top: 1px;
+}
+
+.mapit-search-results-content
+{
+    border-top: 0px;
+    overflow: auto;
+}
+.mapit-search-results-content-items
+{
+    padding: 1em 10px 1em 10px;
+}
+.mapit-search-results-content a
+{
+    font-size: 1.1em;
+}
+.mapit-search-results-title span
+{
+    text-align: center;
+    display: block;
+    padding: .5em 0em .5em .2em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mapit-search-results-none
+{
+    text-align: center;
+}
+
+/* ============================================================================
+MAPIT-BUBBLE: This controls all the layout elements used style the 
+information bubble. 
+============================================================================*/
+.mapit-bubble-title
+{
+	font-weight: bold;
+}
+.mapit-bubble-address,
+.mapit-bubble-directions
+{
+	font-size: 0.9em;
+}
+.mapit-bubble-sublinks
+{
+    margin: 4px 0px 0px 4px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 0.8em;
+}
+.mapit .mapit-embed .ui-tabs
+{
+    background-image: none;
+    background-color: #fff;
+    border-style: none;
+}
+.mapit .mapit-embed .ui-widget
+{
+    font-size: 1em;
+}
+.mapit .mapit-embed .ui-tabs-nav
+{    
+    font-size: 0.6em;
+}
+.mapit .mapit-embed .mapit-embed-bubble
+{
+    line-height: normal;
+    white-space: normal;
+}
+.mapit-browser-ie7 .mapit-embed .mapit-embed-bubble
+{
+    width: 99%;
+}
+.mapit .mapit-embed .mapit-embed-bubble-tabs-panel
+{
+    color: #000;
+    overflow: auto;
+    min-height: 70px;
+    min-width: 180px;
+}
+.mapit .mapit-embed .mapit-embed-bubble-tabs-panel a
+{
+    color: #000;
+}
+.mapit .mapit-embed .ui-tabs-panel
+{
+    padding: 6px;
+}
+.mapit .mapit-google-infobubble-tabs,
+.mapit .mapit-google-infobubble-tabs-ff
+{
+    overflow: hidden !important;
+}
+.mapit .mapit-google-infobubble-tabs
+{
+    left: 2px !important;
+    right: 0px !important;
+    top: 2px !important;
+    bottom: 0px !important;
+    width: 99% !important;
+    height: 99% !important;
+}
+.mapit .mapit-google-infobubble-close
+{
+    top: -9px !important;
+    right: -10px !important;  
+    border-radius:10px;
+    background-color:#222; 
+}
+
+
+/* ============================================================================
+MAPIT-DETAILS: This controls the layout of the classes in the details panel 
+============================================================================ */
+.mapit-details
+{
+    width: 100%;
+    font-size:0.9em;
+}
+.mapit-details-item
+{
+    padding: 8px;
+    margin-bottom: 4px;
+}
+.mapit-details-item table
+{
+    width: 100%;
+}
+.mapit-details-item tr
+{
+    vertical-align: top;
+}
+.mapit-details-item-col1
+{
+    padding-right: 4px;
+}
+.mapit-details-item-col2 {}
+.mapit-details-item-col3
+{
+    text-align: right;
+    font-size: 0.9em;
+    padding: 15px 40px 0px 0px;
+}
+.mapit-details-item-icon
+{
+    width: 42px;
+    text-align: center;
+}
+.mapit-details-item-address
+{
+	font-size: 0.9em;
+}
+.mapit-details
+{
+    width: 100%;
+}
+.mapit-details .mapit-details-template-tabs .ui-tabs-nav
+{
+    font-size: 0.7em;
+}
+.mapit-details .mapit-details-template-tabs-panel
+{
+    height: 100px;
+    overflow: auto;
+}

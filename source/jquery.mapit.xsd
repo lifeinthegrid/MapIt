@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mapit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="templates">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="template">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="tabs">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="tab">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="category">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="locations">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="location">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="infobar" type="xs:string" />
+                                                </xs:sequence>
+                                                <xs:attribute name="isdefault" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="bubble-templateid" type="xs:string" use="optional" />
+                                                <xs:attribute name="details-templateid" type="xs:string" use="optional" />
+                                                <xs:attribute name="name" type="xs:string" use="required" />
+                                                <xs:attribute name="address" type="xs:string" use="required" />
+                                                <xs:attribute name="city" type="xs:string" use="required" />
+                                                <xs:attribute name="province" type="xs:string" use="required" />
+                                                <xs:attribute name="code" type="xs:string" use="required" />
+                                                <xs:attribute name="cordinates" type="xs:string" use="required" />
+                                                <xs:attribute name="showdirectionslink" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="markericon" type="xs:string" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="accordion-animation" type="xs:boolean" use="required" />
+            <xs:attribute name="accordion-autoselect" type="xs:boolean" use="required" />
+            <xs:attribute name="accordion-showsublinks" type="xs:boolean" use="required" />
+            <xs:attribute name="bubble-center" type="xs:boolean" use="required" />
+            <xs:attribute name="bubble-showcoordinates" type="xs:boolean" use="required" />
+            <xs:attribute name="bubble-showatstart" type="xs:boolean" use="required" />
+            <xs:attribute name="coordinatesindirections" type="xs:boolean" use="required" />
+            <xs:attribute name="details-show" type="xs:boolean" use="required" />
+            <xs:attribute name="details-showicon" type="xs:boolean" use="required" />
+            <xs:attribute name="details-showcoordinates" type="xs:boolean" use="required" />
+            <xs:attribute name="maptype" type="xs:string" use="required" />
+            <xs:attribute name="markericon" type="xs:string" use="required" />
+            <xs:attribute name="markers-limitdisplay" type="xs:boolean" use="required" />
+            <xs:attribute name="panx" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="pany" type="xs:short" use="required" />
+            <xs:attribute name="search-show" type="xs:boolean" use="required" />
+            <xs:attribute name="search-text" type="xs:string" use="required" />
+            <xs:attribute name="showdirectionslink" type="xs:boolean" use="required" />
+            <xs:attribute name="startcordinates" type="xs:string" use="required" />
+            <xs:attribute name="title" type="xs:string" use="required" />
+            <xs:attribute name="zoomlevel" type="xs:unsignedByte" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

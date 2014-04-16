@@ -1,0 +1,101 @@
+/* This style sheet is only used for styling the demos it is not requried for MapIt */
+body {font-family: 'Trebuchet MS', verdana, arial, sans-serif;}
+h2 	{margin: 0px 0px 0px 3px; }
+*:focus { outline: 0 none; }
+a {color:#000;}
+a:hover {color:#000;}
+a, a:link, a:visited, a:hover, a:focus, a:active {
+	outline:0 none;
+	border-style:none;
+	noFocusLine: expression(this.onFocus=this.blur());
+}
+
+div.content {padding:10px 50px; line-height:24px; width:960px; margin:auto}
+div.title {
+	padding:5px 10px 5px 10px;
+	margin:0px 0px 10px 0px;
+	border:1px solid silver;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow: 8px 8px 5px #888;
+}
+td.title-links {white-space:nowrap;font-size:16px;text-align:center;}
+
+div.sub-title  {
+	padding:5px 0px 0px 20px;
+	margin-bottom:5px;
+}
+div.header {
+	padding:8px 0px 8px 4px; 
+	font-size:24px ;
+	margin:0px 0px 5px 0px;
+}
+div.code-block {
+	background-color:#dfdfdf;
+	padding:8px;
+	border-radius: 15px;
+}
+span.tag-replace {color:#1A387E; font-weight:bold;text-decoration:underline;}
+div.sample-info {text-align:center; font-size:16px; line-height:28px;}
+.small-font {font-size:12px}
+span#mapit-proversion{color:#406747}
+span#mapit-liteversion{color:maroon}
+span#mapit-webversion{color:#2E55B7}
+span.mapit-compression {font-size:14px}
+.css-overview 
+{
+    vertical-align:top; 
+    padding:15px; 
+    padding-bottom:2px; 
+    border-radius:15px; 
+    border:1px solid silver; 
+    font-size:0.9em; 
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(5, #C4C4C4));
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);               
+}
+
+/*Theme Page*/
+div.theme-switch {text-align:center; font-size:16px; background-color:#F8F8F8; border:1px solid silver; border-radius:5px; margin:20px 0px 8px 0px; }
+select#theme {font-size:16px; margin-bottom:4px}
+/* Index Page */
+table.sales-text {
+    font-size:22px; font-weight:bold; width:100%;  text-shadow: 1px 1px 1px #999; text-align:center; border-radius:8px; border:1px solid silver;
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(5, #C4C4C4));
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    background-image: linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
+    box-shadow: 0 8px 6px -6px black;
+}
+div.demo-links {border:1px solid silver; border-radius:5px; box-shadow: 0 8px 6px -6px black;}
+
+/*LIGHT BOX */
+#mapit-lightbox-shadow {
+    background:#000; 
+    opacity:0.8; 
+    filter:alpha(opacity=80); 
+    position:absolute; 
+    top:0px; 
+    left:0px;
+	min-width:100%;
+	min-height:100%;
+	z-index:1000;
+}
+#mapit-lightbox-panel {
+	display:none;
+	position:absolute;
+	width:100%;
+	background:#FFFFFF;
+	padding:10px 15px 10px 15px;
+	border:2px solid #222;
+	z-index:1001;
+	-moz-box-shadow: 10px 10px 5px #111;
+    -webkit-box-shadow: 10px 10px 5px #111;
+    box-shadow: 10px 10px 5px #111;
+    border-radius:5px;
+}

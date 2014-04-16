@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapit
+    accordion-animation="true"
+    accordion-autoselect="true"
+    accordion-showsublinks="true" 
+    bubble-center="true"
+    bubble-showcoordinates="false"
+    bubble-showatstart="true"
+    coordinatesindirections="true"
+    details-show="true"
+    details-showicon="true"
+    details-showcoordinates="true"
+    maptype="roadmap"
+    markericon="data-pro/ico_books.png"
+    markers-limitdisplay="false"
+    panx="50"
+    pany="-150"
+    search-show="true"
+    search-text="Search by College"
+    showdirectionslink="false"
+    startcordinates="33.471545,-111.956177"
+    title="Universities Across Arizona (Pro)"
+    zoomlevel="10">
+
+  <!--  ======================================================================================
+    TEMPLATES: Templates are common reusable layouts that you can used for all or some of 
+    your locations.  Define a template once and then reuse it in your location tags with the
+    attributes: bubble-templateid and details-templateid as attributes of the category or location tags
+        For the bubble window use: bubble-templateid="myidname"
+        For the details view use:  details-templateid="myidname"   -->
+  <templates>
+      
+    <!-- FULL TEMPLATE EXAMPLE: -->
+    <template id="FullBubbleTemplate">
+      <tabs>
+        <tab name="Directions">
+          <![CDATA[
+              <i style='font-size:12px'>Example Bubble Template </i> <br/><br/>
+              <table>
+                <tr style="vertical-align:top;">
+                    <td><img src="{{markericon}}" style='margin-right:5px;float:left;' /></td>
+                    <td>
+                    {{name}}<br/>
+                    {{address}}<br/>
+                    {{city}}, {{province}} {{code}}
+                    </td>
+                </tr>
+              </table> 
+             <center>Visit this college  <a href="{{maincampuslink}}" target="_blank">website</a></center>
+          ]]>
+        </tab>
+        <tab name="History">
+            <![CDATA[  {{info}}  ]]>
+        </tab>
+        <tab name="Links">
+            <![CDATA[ {{links}}  ]]>
+        </tab>
+      </tabs>
+    </template>
+    <template id="FullDetailsTemplate">
+        <![CDATA[
+        <center style='font-size:12px'><i>- Example Details Template - </i></center>
+        <table>
+            <tr style="vertical-align:top;">
+                <td style='width:20px'><img src="{{markericon}}" style='margin-right:5px;float:left;' /></td>
+                <td>
+                {{name}}<br/>
+                {{address}}<br/>
+                {{city}}, {{province}} {{code}} <br/>
+                Visit this college  <a href="{{maincampuslink}}" target="_blank">website</a>
+
+                {{links}}
+                </td>
+            </tr>
+        </table>
+        ]]>
+    </template>
+      
+
+     <!-- SIMPLE TEMPLATE EXAMPLE: -->
+    <template id="SimpleBubbleTemplate">
+      <![CDATA[
+      <i style='font-size:12px'>Simple Bubble Template Example</i> <br/>
+      <b>{{name}}</b><br/>
+      {{address}}<br/>
+      {{city}}, {{province}} {{code}}
+      {{links}}
+      ]]>
+    </template>
+    <template id="SimpleDetailsTemplate">
+      <![CDATA[
+        <center style='font-size:12px'><i>- Simple Details Template Example - </i></center>
+        <b><a href="{{maincampuslink}}" target="_blank">{{name}}</a></b><br/>
+        {{links}}
+      ]]>
+     </template>
+      
+
+    <!-- CUSTOM: -->
+    <template id="FlagStaffDetailsTemplate">
+        <tabs>
+            <tab name="Address">
+                <![CDATA[
+                <table style='width:500px'>
+                <tr style="vertical-align:top;">
+                    <td><img src="{{markericon}}" style='margin-right:5px;float:left;' /></td>
+                    <td style='width:100%'>
+                    {{name}}<br/>
+                    {{address}}<br/>
+                    {{city}}, {{province}} {{code}}
+                    </td>
+                </tr>
+                </table> 
+                ]]>
+            </tab>
+            <tab name="History">
+                <![CDATA[  {{info}}  ]]>
+            </tab>
+            <tab name="Links">
+                <![CDATA[ 
+                    {{links}}  
+                    <center style='font-size:12px'><i>Use the special {links} markup to auto generate your links </i></center>
+                ]]>
+            </tab>
+        </tabs>
+    </template>
+      
+  </templates>
+  <!-- ======================================================================================
+  END TEMPLATES -->
+    
+    
+
+  <!--  ================
+  CATEGORY: CHANDLER -->
+  <category 
+      name="Chandler"  
+      isdefault="true">
+    <locations>
+        <location
+        isdefault="true"
+        bubble-templateid="FullBubbleTemplate"
+        details-templateid="FullDetailsTemplate"
+        name="Chandler Gilbert College"
+        address="2626 E. Pecos Road"
+        city="Chandler"
+        province="AZ"
+        code="85225"
+        cordinates="33.292799,-111.794536"
+        showdirectionslink="false"
+        markericon="data-pro/ico_books.png"
+        maincampuslink="http://www.cgc.maricopa.edu/Pages/Default.aspx">
+        <info>
+            <![CDATA[
+            <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+            <span style='font-size:0.7em;'>
+            Founded in 1985, CGCC is a comprehensive community college in Chandler, Arizona, serving the higher education
+            needs of our residents at three locations in the Southeast Valley of the Phoenix metropolitan area - the Pecos
+            Campus in Chandler, the Williams Campus in Mesa, and the Sun Lakes Center in Sun Lakes.
+            </span>
+            ]]>
+        </info>
+        <links>
+            <link
+                name="Courses"
+                url="http://www.cgc.maricopa.edu/academic-affairs/Pages/CourseCatalog.aspx"
+                target="_blank" />
+            <link
+                name="Class Schedule"
+                url="http://www.cgc.maricopa.edu/student-affairs/admissions/Pages/class-schedule.aspx"
+                target="_blank" />
+        </links>
+    </location>
+    <location
+        bubble-templateid="SimpleBubbleTemplate"
+        details-templateid="SimpleDetailsTemplate"
+        name="Embry-Riddle University"
+        address="2155 W. Pecos Road #1"
+        city="Chandler"
+        province="AZ"
+        code="85225"
+        cordinates="33.304134,-111.882019"
+        markericon="data-pro/ico_books.png"
+        maincampuslink="http://www.erau.edu">
+        <info>
+            <![CDATA[
+            <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+            <span style='font-size:0.7em;'>
+            Since it was founded just 22 years after the Wright brothers' first flight, the University and its graduates have
+            built an enviable record of achievement in every aspect of aviation and aerospace. The curriculum at Embry-Riddle
+            covers the operation, engineering, research, manufacturing, marketing, and management of modern aircraft and the
+            systems that support them.
+            </span>
+            ]]>
+        </info>
+        <links>
+            <link
+                name="Courses"
+                url="http://www.erau.edu/degrees/catalog/index.html"
+                target="_blank" />
+            <link
+                name="Class Schedule"
+                url="http://worldwide.erau.edu/campuses-online/online-learning/schedules/index.html"
+                target="_blank" />
+        </links>
+    </location>
+    </locations>
+  </category>
+
+  <!--  ================
+    CATEGORY: FLAGSTAFF -->
+  <category name="Flagstaff">
+    <locations>
+      <location
+        details-templateid="FlagStaffDetailsTemplate"
+        name="Northern Arizona University"
+        address="100 University Drive"
+        city="Flagstaff"
+        province="AZ"
+        code="85308"
+        showdirectionslink="false"
+        cordinates="35.179982,-111.657572"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          Northern Arizona University offers undergraduate and graduate students a high-caliber global education set in a tight-knit
+          community of students, faculty, staff, and alumni. We are also renowned for providing students with personal attention from
+          professors, research opportunities, and hands-on learning.
+          </span>
+          ]]>
+        </info>
+        <links>
+            <link
+                name="Courses"
+                url="http://www4.nau.edu/aio/AcademicCatalog/academiccatalogs.htm"
+                target="_blank" />
+            <link
+                name="University Life"
+                url="http://nau.edu/about/life/"
+                target="_blank" />
+        </links>          
+      </location>
+    </locations>
+  </category>
+
+  <!--  ================
+    CATEGORY: GLENDALE -->
+  <category name="Glendale">
+    <locations>
+      <location
+        name="Midwestern Glendale"
+        address="57th Dr Glendal"
+        city="Glendale"
+        province="AZ"
+        code="85308"
+        cordinates="33.664389,-112.182598"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          Study and live in the comfort and safety of the suburbs while you're part of a major metropolitan area. Midwestern University's
+          Glendale campus is just 15 minutes from downtown Phoenix. Leading hospitals, clinics, laboratories, and private practices
+          throughout the Southwest offer you the kind of hands-on learning through preceptorships and clinical rotations that brings your
+          didactic education to life.
+          </span>
+          ]]>
+        </info>
+      </location>
+      <location
+        name="Thunderbird Management"
+        address="1 Global Place"
+        city="Glendale"
+        province="AZ"
+        code="85306"
+        cordinates="33.631772,-112.18277"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          For more than 60 years, we have educated global leaders who are also global citizens - because we live by the credo that borders
+          frequented by trade seldom need soldiers, and we’re committed to helping develop a stable world economy where that philosophy becomes reality.
+          </span>
+          ]]>
+        </info>
+      </location>
+    </locations>
+  </category>
+
+  <!--  ================
+    CATEGORY: PHOENIX -->
+  <category name="Phoenix">
+    <locations>
+      <location
+        name="ASU Downtown"
+        address="502 Monroe"
+        city="Phoneix"
+        province="AZ"
+        code="85004"
+        cordinates="33.456078,-112.070503"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          Through the Downtown Phoenix campus, ASU is joining student life wan an urban lifestyle in the heart of Phoenix.
+          Fulfilling a compelling vision for a revolutionary student experience for the more than 5,000 students enrolled,
+          the campus combies research with retail, class-rooms with culture, in the high-tech facilities that make the most
+          of the location and the city's vibrant neighborhoods.
+          </span>
+          ]]>
+        </info>
+      </location>
+      <location
+        name="Collins College"
+        address="4750 South 44th Plac"
+        city="Phoneix"
+        province="AZ"
+        code="85040"
+        cordinates="33.415968,-111.988449"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          Build the foundation for your future at Collins College, where we offer associate and bachelor’s degrees in some of
+          today's exciting career fields. Our college in Arizona, located in Phoenix, offers students a convenient choice to
+          further their education, whether they’re just out of high school or returning to school to pursue additional career training.
+          </span>
+          ]]>
+        </info>
+      </location>
+      <location
+        name="DeVry University"
+        address="2149 Dunlap"
+        city="Phoneix"
+        province="AZ"
+        code="85021"
+        cordinates="33.572008,-112.105865"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          You push past obstacles to achieve your goals. And at DeVry University we're focused on supporting you in your efforts,
+          with a faculty and staff dedicated to your success through graduation and beyond. Take control of your future by earning
+          your degree through one of our 5 colleges of study or our Keller Graduate School of Management.
+          </span>
+          ]]>
+        </info>
+      </location>
+      <location
+        name="Grand Canyon"
+        address="3300 West Camelback Road"
+        city="Phoneix"
+        province="AZ"
+        code="85021"
+        cordinates="33.512417,-112.129641"
+        markericon="data-pro/ico_books.png">
+      </location>
+      <location
+        name="University Of Phoenix"
+        address="735 East Fillmore Street"
+        city="Phoneix"
+        province="AZ"
+        code="85021"
+        cordinates="33.467535,-112.06398"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          Since 1976, University of Phoenix has helped thousands of working adults reach their educational goals. With online and on-campus degree
+          programs, University of Phoenix is dedicated to building a foundation for your success.
+          </span>
+          ]]>
+        </info>
+      </location>
+    </locations>
+  </category>
+
+  <!--  ================
+    CATEGORY: TEMPE -->
+  <category name="Tempe">
+    <locations>
+      <location
+        name="Arizona State University"
+        address="286-598 S Rural Rd"
+        city="Tempe"
+        province="AZ"
+        code="85281"
+        cordinates="33.428567,-111.926597"
+        markericon="data-pro/ico_books.png"
+        bubble-templateid="FullBubbleTemplate"
+        housinglink="http://www.asu.edu/housing/"
+        studentlifelink="http://www.asu.edu/studentaffairs/reslife/">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          More than 30 percent of ASU's freshmen graduate in the top 10 percent of their high school class and
+          57 percent in the top 25 percent. ASU ranks among the top in the nation in student entrepreneurs and
+          one of the top 10 producers of Fulbright Scholars in the U.S. ASU is also home to 612 National Merit
+          Scholars and 324 National Hispanic Scholars. Our students have one thing in common: total immersion
+          in an innovative atmosphere where they are able to chart their own path to success.
+          </span>
+          ]]>
+        </info>
+      </location>
+    </locations>
+  </category>
+
+  <!--  ================
+    CATEGORY: SCOTTSDALE -->
+  <category name="Tucson">
+    <locations>
+      <location
+        name="University of Arizona"
+        address="1230 E Speedway Blvd"
+        city="Tucson"
+        province="AZ"
+        code="85719"
+        cordinates="32.235092,-110.953631"
+        markericon="data-pro/ico_books.png">
+        <info>
+          <![CDATA[
+          <img src="data-pro/ico_books.png" style='margin-right:5px;float:left;' />
+          <span style='font-size:0.7em;'>
+          As a public research university serving the diverse citizens of Arizona and beyond, the mission of the
+          University of Arizona is to provide a comprehensive, high-quality education that engages our students
+          in discovery through research and broad-based scholarship. We aim to empower our graduates to be leaders
+          in solving complex societal problems. Whether in teaching, research, outreach or student engagement,
+          access and quality are the defining attributes of the University of Arizona’s mission.
+          </span>
+          ]]>
+        </info>
+      </location>
+    </locations>
+  </category>
+</mapit>

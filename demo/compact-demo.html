@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MapIt Pro - Compact Layout</title>
+	<meta name="description" content="Create powerful maps with MapIt Pro. MapIt is A jQuery plugin powered by Google Maps." />
+	<meta name="keywords" content="jquery, maps, mapit, google, javascript, html5, plugin, mapping, global, pro" />
+    <meta name="author" content="lifeinthegrid.com">
+	<link rel="stylesheet" href="../style.css" type="text/css" media="all" />
+
+	
+	<!-- ==============================================
+	REQUIRED FOR MAPIT. -->
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/cupertino/jquery-ui.css" id="mapitcss" media="screen" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="../source/jquery.mapit.css" type="text/css" media="all" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="../source/jquery.mapit.js" id="mapit-source"></script>
+	<!-- ============================================== -->
+	
+	<script type="text/javascript" src="../script.js"></script>
+
+	<style type="text/css">
+		/* ==============================================================
+        STYLE OVER-RIDES: To overide the base mapit.css make 
+		sure your style block is below the mapit.css link */
+		 
+		/*MAIN CONTENT: */
+	    .mapit { width: 575px; }
+		.mapit-title {font-size:18px !important;}
+	    .mapit-content { height: 400px; }
+		.mapit-map-content {width:70% !important;}
+
+		/*NAVIGATION: */
+		.mapit-navigation {width:30% !important;}
+		.mapit-accordion-link {font-size:11px !important;}
+		.mapit-accordion .ui-accordion-header a {font-size:11px !important;}
+		
+		/*BUBBLE */
+		.mapit-embed-bubble-tabs-panel {font-size:0.9em}
+
+		/*DETAILS:  */
+		.mapit-details {margin-left:0px; width:100%;}
+		.mapit-details {height: 200px; overflow-y:scroll; border:1px solid silver;margin-top:4px;}
+		.mapit-details-item {margin:8px;font-size:0.8em;}
+	</style>
+    <!--[if LT IE 9]>
+    <style type="text/css">
+        .mapit-map-content {width:69% !important;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+
+<div class="content">
+
+	<div class="title">
+		<table>
+			<tr>
+				<td style="width:100%">
+					<h2>MapIt - Compact Layout</h2>
+					<span style="margin-left:20px">Smaller scale view of MapIt</span>
+				</td>
+				<td class="title-links">
+					<a href="../index.html">Home</a> |
+					<a class="mapit-configuration" href="data-pro/data-universities.xml">Map Data</a><br/>
+					<div id="mapit-version-mode"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+    <br />
+
+    <div>
+        <div id="map" style="float:left;"></div>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function ()
+			{
+			    jQuery("#map").mapit(
+				{
+					xmlConfig: "data-pro/data-universities.xml"
+				});
+			});
+		</script>
+
+        <div style="float:right;height:625px;width:340px;" class="css-overview">
+			<h3>Resizing MapIt with CSS</h3>
+
+                    
+            &raquo; <i>Overall Map</i><br />
+            .mapit {width:575px;}<br />
+            .mapit-content {height:400px;}<br /><br />
+
+            &raquo; <i>Navigation &amp; Google Map</i><br />
+            .mapit-navigation {width:30% !important;}<br />
+            .mapit-map-content {width:70% !important;}<br /><br />
+
+            &raquo; <i>Font Adjustments</i><br />
+            .mapit-accordion-link {font-size:11px !important;}<br />
+		    .ui-accordion-header a {font-size:11px !important;}
+
+            <p>
+			View the page source to see the CSS overrides used to customize this version of MapIt.<br/><br/>
+            </p>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+</div>
+	
+</body>
+</html>

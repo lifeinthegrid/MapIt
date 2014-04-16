@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapit
+    accordion-animation="true"
+    accordion-autoselect="true"
+    accordion-showsublinks="true" 
+    bubble-center="true"
+    bubble-showcoordinates="false"
+    bubble-showatstart="true"
+    coordinatesindirections="true"    
+    details-show="true"
+    details-showicon="true"
+    details-showcoordinates="true"
+    maptype="roadmap"
+	markericon="data-pro/ico_coffee.png"
+    panx="0"
+    pany="-200" 
+    search-show="false"
+    search-text="Search Texas"    
+    showdirectionslink="false"   
+    title="Texas Coffee"
+	startcordinates="33.471545,-111.956177" >
+	<category name="Austin">
+		<locations>
+			<location
+				name="North Austin Avenue"
+				address="900 North Austin Avenue"
+				city="Austin"
+				province="TX"
+				code="78626"
+				cordinates="30.650909,-97.67807"
+				 markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="Ranch Road 620 South"
+				address="2303 Ranch Road 620 South"
+				city="Austin"
+				province="TX"
+				code="78626"
+				cordinates="30.34088,-97.965088"
+				 markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="Brodie Lane"
+				address="9911 Brodie Lane"
+				city="Austin"
+				province="TX"
+				code="78626"
+				cordinates="30.223475,-97.878571"
+				 markericon="data-pro/ico_coffee.png">
+            </location>					
+		</locations>
+	</category>		
+	<category name="Dallas">
+		<locations>
+			<location
+				name="1401 Commerce Street"
+				address="Commerce Street"
+				city="Dallas"
+				province="TX"
+				code="75150"
+				cordinates="32.795356,-96.799164"
+				markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="Northwest Highway"
+				address="909 Northwest Highway"
+				city="Dallas"
+				province="TX"
+				code="75150"
+				cordinates="32.880164,-96.638489"
+				markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="East Mockingbird Lane"
+				address="5331 East Mockingbird Lane"
+				city="Dallas"
+				province="TX"
+				code="75150"
+				cordinates="32.85248,-96.774445"
+				markericon="data-pro/ico_coffee.png">
+            </location>					
+		</locations>
+	</category>		
+	<category name="Houston">
+		<locations>
+			<location
+				name="Montrose Boulevard"
+				address="3407 Montrose Boulevard"
+				city="Houston"
+				province="TX"
+				code="77006"
+				cordinates="29.747984,-95.389481"
+				markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="South Main"
+				address="9602 South Main"
+				city="Houston"
+				province="TX"
+				code="77006"
+				cordinates="29.685368,-95.426559"
+				markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="Post Oak Boulevard"
+				address="2521 Post Oak Boulevard"
+				city="Houston"
+				province="TX"
+				code="77006"
+				cordinates="29.746792,-95.461235"
+				markericon="data-pro/ico_coffee.png">
+            </location>					
+		</locations>
+	</category>
+	<category name="San Antonio">
+		<locations>
+			<location
+				name="Broadway Road"
+				address="5321 Broadway Road"
+				city="San Antonio"
+				province="TX"
+				code="78209"
+				cordinates="29.484137,-98.463249"
+				markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="Vance Jackson"
+				address="1118 Vance Jackson"
+				city="San Antonio"
+				province="TX"
+				code="78209"
+				cordinates="29.491609,-98.533287"
+				markericon="data-pro/ico_coffee.png">
+            </location>
+			<location
+				name="Southwest Military Drive"
+				address="2810 Southwest Military Drive"
+				city="San Antonio"
+				province="TX"
+				code="78209"
+				cordinates="29.362728,-98.54084"
+				markericon="data-pro/ico_coffee.png">
+            </location>					
+		</locations>
+	</category>
+</mapit>

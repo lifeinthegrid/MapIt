@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapit
+    accordion-animation="true"
+    accordion-autoselect="true"
+    accordion-showsublinks="true" 
+    bubble-center="true"
+    bubble-showcoordinates="false"
+    bubble-showatstart="true"
+    coordinatesindirections="true"    
+    details-show="true"
+    details-showicon="true"
+    details-showcoordinates="true"
+	maptype="roadmap"
+	markericon="data-pro/ico_coffee.png"
+    panx="0"
+    pany="-200" 
+    search-show="true"
+    search-text="Search California"    
+    showdirectionslink="false"    
+    startcordinates="36.738884,-119.750977"
+    title="California Coffee">
+	<category name="Fresno" isdefault="true" >
+		<locations>
+			<location
+				name="U Street"
+				address="1100 U Street"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.758141,-119.779129"
+				markericon="data-pro/ico_coffee.png">
+            </location>	
+			<location
+				name="E Shaw"
+				address="2635 E Shaw"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.811621,-119.740677"
+				markericon="data-pro/ico_coffee.png">
+				
+            </location>	
+			<location
+				name="East Shields"
+				address="2035 East Shields"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.783305,-119.787369"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>
+			<location
+				name="Kern Street"
+				address="2325 Kern Street"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.737921,-119.785652"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="E Olive Avenue"
+				address="741 E Olive Avenue"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.762954,-119.800758"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="N. Peach Avenue"
+				address="1595 N. Peach Avenue"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.812308,-119.782734"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>		
+			<location
+				name="W Shaw"
+				address="3181 W Shaw"
+				city="Fresno"
+				province="CA"
+				code="93721"
+				cordinates="36.810247,-119.847279"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>					
+		</locations>
+	</category>		
+	<category name="Los Angeles">
+		<locations>
+			<location
+				name="South Hoover Street"
+				address="3303 South Hoover Street"
+				city="Los Angeles"
+				province="CA"
+				code="90007"
+				cordinates="34.029189,-118.282928"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="E. 3rd Street"
+				address="3853 E. 3rd Street"
+				city="Los Angeles"
+				province="CA"
+				code="90007"
+				cordinates="34.037582,-118.184395"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Sunset Boulevard"
+				address="2134 Sunset Boulevard"
+				city="Los Angeles"
+				province="CA"
+				code="90007"
+				cordinates="34.081526,-118.264904"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>		
+			<location
+				name="N. Vermont Avenue"
+				address="1700 N. Vermont Avenue"
+				city="Los Angeles"
+				province="CA"
+				code="90007"
+				cordinates="34.105977,-118.290997"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+		</locations>
+	</category>
+	<category name="San Francisco">
+		<locations>
+			<location
+				name="Union Street"
+				address="1899 Union Street"
+				city="San Francisco"
+				province="CA"
+				code="94103"
+				cordinates="37.79856,-122.430353"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Fillmore Street"
+				address="1501 Fillmore Street"
+				city="San Francisco"
+				province="CA"
+				code="94103"
+				cordinates="37.784385,-122.433143"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Powell Street"
+				address="462 Powell Street"
+				city="San Francisco"
+				province="CA"
+				code="94103"
+				cordinates="37.789947,-122.40808"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Fulton Street"
+				address="1799 Fulton Street"
+				city="San Francisco"
+				province="CA"
+				code="94103"
+				cordinates="37.776719,-122.446232"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>				
+		</locations>
+	</category>
+	<category name="San Diego">
+		<locations>
+			<location
+				name="Horton Plaza"
+				address="324 Horton Plaza"
+				city="San Diego"
+				province="CA"
+				code="92101"
+				cordinates="32.718122,-117.163525"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="University Avenue"
+				address="2899 University Avenue"
+				city="San Diego"
+				province="CA"
+				code="92101"
+				cordinates="32.751911,-117.130737"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>
+			<location
+				name="Friars Road"
+				address="7007 Friars Road"
+				city="San Diego"
+				province="CA"
+				code="92101"
+				cordinates="32.774285,-117.167816"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Mission Gorge Road"
+				address="9868 Mission Gorge Road"
+				city="San Diego"
+				province="CA"
+				code="92101"
+				cordinates="32.855364,-116.976242"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>				
+		</locations>
+	</category>	
+	<category name="Sacramento">
+		<locations>
+			<location
+				name="Lake Road"
+				address="4055 Lake Road"
+				city="Sacramento"
+				province="CA"
+				code="95691"
+				cordinates="38.577964,-121.579857"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="2100 Arden Way"
+				address="2100 Arden Way"
+				city="Sacramento"
+				province="CA"
+				code="95691"
+				cordinates="38.603188,-121.419182"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Olson Drive"
+				address="10820 Olson Drive"
+				city="Sacramento"
+				province="CA"
+				code="95691"
+				cordinates="38.601579,-121.283569"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>	
+			<location
+				name="Florin Road"
+				address="1042 Florin Road"
+				city="Sacramento"
+				province="CA"
+				code="95691"
+				cordinates="38.503042,-121.520462"
+				markericon="data-pro/ico_coffee.png">
+			
+            </location>				
+		</locations>
+	</category>		
+</mapit>

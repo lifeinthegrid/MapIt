@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- THIS IS A TEMPLATE FILE: Please use this as a template to populate the data points for mapit -->
+<mapit
+    accordion-animation="true"
+    accordion-autoselect="true"
+    accordion-showsublinks="true" 
+    bubble-center="true"
+    bubble-showcoordinates="false"
+    bubble-showatstart="true"
+    coordinatesindirections="true"
+    details-show="true"
+    details-showicon="true"
+    details-showcoordinates="true"
+    maptype="roadmap"
+    markericon="data-pro/ico_books.png"
+    markers-limitdisplay="false"
+    panx="50"
+    pany="-150"
+    search-show="true"
+    search-text="Search"
+    showdirectionslink="false"
+    startcordinates="33.471545,-111.956177"
+    title="MapIt Pro"
+    zoomlevel="10">
+    <!--  ======================================================================================
+    TEMPLATES: Templates are common reusable layouts that you can used for all or some of 
+    your locations.  Define a template once and then reuse it in your location tags with the
+    attributes: bubble-templateid and details-templateid as attributes of the category or location tags
+        For the bubble window use: bubble-templateid="myidname"
+        For the details view use:  details-templateid="myidname"   -->
+    <templates>
+        <template id="FullTemplate">
+            <tabs>
+                <tab name="Directions">
+                    <![CDATA[ ]]>
+                </tab>
+                <tab name="History">
+                    <![CDATA[  {{info}}  ]]>
+                </tab>
+                <tab name="Links">
+                    <![CDATA[ {{links}}  ]]>
+                </tab>
+            </tabs>
+        </template>
+    </templates>
+    <category name="">
+		<locations>
+			<location
+                isdefault="true"
+                bubble-templateid="FullTemplate"
+                details-templateid="FullTemplate"
+                name=""
+                address=""
+                city=""
+                province=""
+                code=""
+                cordinates="33.292799,-111.794536"
+                showdirectionslink="false">
+                <infobar>
+                    <![CDATA[
+                    <h2>Info Here</h2>
+                    <span style='font-size:0.7em;'>
+
+                    </span>
+                    ]]>
+                </infobar>
+            </location>	
+			<location
+				name=""
+				address=""
+				city=""
+				province=""
+				code=""
+				cordinates=""
+				markericon="">
+                <infobar>
+                    <![CDATA[
+                    <h2>Info Here</h2>
+                    <span style='font-size:0.7em;'>
+
+                    </span>
+                    ]]>
+                </infobar>
+            </location>				
+		</locations>
+	</category>
+</mapit>

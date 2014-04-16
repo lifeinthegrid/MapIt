@@ -1,0 +1,39 @@
+== DESCRIPTION ==
+
+MapIt is an open source jQuery enabled plug-in that interacts with Google maps API.
+The plug-in is designed to make navigating and finding key coordinates anywhere in 
+the world a simple process. Completely driven by XML, this plug-in helps you group 
+and organize all your location links. The easy and simple to edit XML configuration 
+file allows you to create groupings of your coordinates, and display them in a 
+hierarchical format. Clicking on the link coordinate will automatically find the point
+of interest on the Google map. This plug-in is great for organizing and simplifying
+your maps.
+
+Copyright 2011-2012 Cory Lamle, Ryan Heideman 
+
+
+== DETAILS AND CHANGELOG ==
+http://lifeinthegrid.com/mapit
+http://lifeinthegrid.com/mapit-log
+
+
+== QUICK GUIDE ==
+
+Note:
+	- This plugin will only work from an  "http(s)://" path 
+	- DO NOT try and use from a path such as "file:///"
+	- The demos make references to Google’s CDN network which will require internet access
+	- To see the plugin extract the zip file to your web server then browse to index.html
+
+1. The easiest way to get started with the plugin is to just use one of the existing demos source code.
+
+2. Move the source code to the location on your web server that you desire.
+
+3. Inside each demo is a comment section labeled: "REQUIRED FOR MAPIT" make sure all this code is 
+included and the paths map correctly to the locations of where you moved each file.
+
+4. Do not set "cacheXml" to true until you go live.  If you are dynamically generating the xml 
+file then leave the cacheXml to false.
+
+
+
