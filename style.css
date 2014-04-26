@@ -1,5 +1,5 @@
 /* This style sheet is only used for styling the demos it is not requried for MapIt */
-body {font-family: 'Trebuchet MS', verdana, arial, sans-serif;}
+body {font-family: 'Trebuchet MS', verdana, arial, sans-serif;  }
 h2 	{margin: 0px 0px 0px 3px; }
 *:focus { outline: 0 none; }
 a {color:#000;}
@@ -9,8 +9,7 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
 	border-style:none;
 	noFocusLine: expression(this.onFocus=this.blur());
 }
-
-div.content {padding:10px 50px; line-height:24px; width:960px; margin:auto}
+div.content {padding:10px 50px; line-height:24px; width:800px; margin:auto}
 div.title {
 	padding:5px 10px 5px 10px;
 	margin:0px 0px 10px 0px;
@@ -21,20 +20,8 @@ div.title {
 }
 td.title-links {white-space:nowrap;font-size:16px;text-align:center;}
 
-div.sub-title  {
-	padding:5px 0px 0px 20px;
-	margin-bottom:5px;
-}
-div.header {
-	padding:8px 0px 8px 4px; 
-	font-size:24px ;
-	margin:0px 0px 5px 0px;
-}
-div.code-block {
-	background-color:#dfdfdf;
-	padding:8px;
-	border-radius: 15px;
-}
+div.header {padding:8px 0px 8px 4px; font-size:24px ;	margin:0px 0px 5px 0px;}
+div.code-block {background-color:#dfdfdf; padding:8px;border-radius: 15px;}
 span.tag-replace {color:#1A387E; font-weight:bold;text-decoration:underline;}
 div.sample-info {text-align:center; font-size:16px; line-height:28px;}
 .small-font {font-size:12px}
@@ -62,17 +49,10 @@ span.mapit-compression {font-size:14px}
 div.theme-switch {text-align:center; font-size:16px; background-color:#F8F8F8; border:1px solid silver; border-radius:5px; margin:20px 0px 8px 0px; }
 select#theme {font-size:16px; margin-bottom:4px}
 /* Index Page */
-table.sales-text {
-    font-size:22px; font-weight:bold; width:100%;  text-shadow: 1px 1px 1px #999; text-align:center; border-radius:8px; border:1px solid silver;
-    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(5, #C4C4C4));
-    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    box-shadow: 0 8px 6px -6px black;
-}
-div.demo-links {border:1px solid silver; border-radius:5px; box-shadow: 0 8px 6px -6px black;}
+div.sales-text { font-size:22px; font-weight:bold;   text-align:center; color:#555}
+div.demo-links {border:1px solid silver; border-radius:5px;}
+div.demo-links a {text-decoration: underline}
+div.demo-links  table td {padding: 6px}
 
 /*LIGHT BOX */
 #mapit-lightbox-shadow {
@@ -99,3 +79,19 @@ div.demo-links {border:1px solid silver; border-radius:5px; box-shadow: 0 8px 6p
     box-shadow: 10px 10px 5px #111;
     border-radius:5px;
 }
+
+.jumbotron, .gray-mix{
+	border-radius: 5px; text-align: center;	padding:10px; margin-top:-10px;
+	color:#000; text-shadow: #dfdfdf 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+
+}
+
+/* Custom page header */
+.header h3 {padding-bottom: 19px; margin-top: 0; margin-bottom: 0; line-height: 40px;}
