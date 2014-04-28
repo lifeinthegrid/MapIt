@@ -15,14 +15,14 @@ All the heavy lifting is done so you don't have to learn the Google API. Just ed
 
 ##Usage
 
-* MapIt will only work from an  "http(s)://" path.  Do **not** try "file:///"
-* To use plugin extract the zip file to your web server then browse to index.html
+MapIt will only work from an  "http(s)://" path.  Do **not** try "file:///"  
+To use plugin extract the zip file to your web server then browse to index.html  
+The demos make references to Google's CDN network which requires internet access  
 
-1. The easiest way to get started is copy an existing demo and then modify.
+1. To get started copy an existing demo and then modify.
 2. Move the source code to the location on your web server.
 3. Check that all paths map correctly to the locations of where you moved each file (scripts, links, code).
 4. Set "cacheXml" to true only in production.  If dynamically generating the XML file then set to false.
-5. The demos make references to Google's CDN network which requires internet access
 
 
 ##Versioning
