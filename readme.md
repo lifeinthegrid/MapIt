@@ -15,9 +15,9 @@ All the heavy lifting is done so you don't have to learn the Google API. Just ed
 
 ##Usage
 
-- This plugin will only work from an  "http(s)://" path.  Do **not** try "file:///"
-- The demos make references to Google's CDN network which requires internet access
-- To use plugin extract the zip file to your web server then browse to index.html
+* MapIt will only work from an  "http(s)://" path.  Do **not** try "file:///"
+* The demos make references to Google's CDN network which requires internet access
+* To use plugin extract the zip file to your web server then browse to index.html
 
 1. The easiest way to get started is to copy existing demos source code and then modify.
 2. Move the source code to the location on your web server.
