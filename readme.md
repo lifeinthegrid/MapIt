@@ -16,13 +16,13 @@ All the heavy lifting is done so you don't have to learn the Google API. Just ed
 ##Usage
 
 - This plugin will only work from an  "http(s)://" path.  Do **not** try "file:///" 
-- The demos make references to Google's CDN network which requires internet access
-- To see the plugin extract the zip file to your web server then browse to index.html
+- The demos make references to Google's CDN network which requires internet access  
+- To see the plugin extract the zip file to your web server then browse to index.html  
 
 1. The easiest way to get started is to copy existing demos source code and then modify.
 2. Move the source code to the location on your web server.
 3. Check that all paths map correctly to the locations of where you moved each file (scripts, links, code).
-4. Do not set "cacheXml" to true until you go live.  If dynamically generating the XML file then set "cacheXml" to false.
+4. Set "cacheXml" to true only in production.  If dynamically generating the XML file then set to false.
 
 
 ##Versioning
