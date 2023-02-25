@@ -5,7 +5,7 @@
  * @requires jQuery v1.8.12 or later
  *
  * Documentation:
- * 		http://www.lifeinthegrid.com/mapit
+ * 		https://www.lifeinthegrid.com/mapit
  *
  * Copyright 2011-2012 Cory Lamle, Ryan Heideman <cory@lifeinthegrid.com, ryan@lifeinthegrid.com>
  *
@@ -69,7 +69,7 @@ mapit = function (options)
     var _mapOptions;
     var _markerClusters = null;
     var _themeVersion = "1.8.12";
-    var _themeUrl = "http://ajax.googleapis.com/ajax/libs/jqueryui/{0}/themes/{1}/jquery-ui.css";
+    var _themeUrl = "https://ajax.googleapis.com/ajax/libs/jqueryui/{0}/themes/{1}/jquery-ui.css";
     var _templateRegEx = /{{[0-9a-z]*}}/ig;
 
     var _scriptSource = document.getElementById("mapit-source");
@@ -134,6 +134,7 @@ mapit = function (options)
         mapit.globals.accordionIds.push(controlIds.accordionId);
 
         jQuery("#" + controlIds.accordionId).accordion({
+			heightStyle: "fill",
             fillSpace: true,
             animated: _opts.accordionAnimation,
             active: defaultCat,
@@ -396,7 +397,7 @@ mapit = function (options)
                     var latLng = { lat: cords[0], lng: cords[1] };
                     var address = loc.get_address() + ', ' + loc.get_city() + ', ' + loc.get_state() + ' ' + loc.get_zip() + (_opts.coordinatesInDirections ? "@" + latLng.lat + "," + latLng.lng : "");
                     html += "<td class='mapit-details-item-col3'>"
-                    html += "<a href='http://maps.google.com/maps?saddr=&daddr=" + encodeURIComponent(address).replace(/'/g, "%27") + "' target='_blank' class='mapit-details-item-directions'>Get Directions</a>";
+                    html += "<a href='https://maps.google.com/maps?saddr=&daddr=" + encodeURIComponent(address).replace(/'/g, "%27") + "' target='_blank' class='mapit-details-item-directions'>Get Directions</a>";
                     html += "</td>";
 
                     html += "</tr></table>";
@@ -517,7 +518,7 @@ mapit = function (options)
 
         if (resizeAccordion)
         {
-            jQuery("#" + controlIds.accordionId).accordion("resize");
+            jQuery("#" + controlIds.accordionId).accordion("refresh");
         }
     };
     var _search = function (searchText)
@@ -779,7 +780,7 @@ mapit = function (options)
                 {
                     for (var i = 0; i < mapit.globals.accordionIds.length; i++)
                     {
-                        jQuery("#" + mapit.globals.accordionIds[i]).accordion("resize");
+                        jQuery("#" + mapit.globals.accordionIds[i]).accordion("refresh");
                     }
                 }, 500);
             }
@@ -1028,7 +1029,7 @@ mapit = function (options)
                 var address = location.get_address() + ', ' + location.get_city() + ', ' + location.get_state() + ' ' + location.get_zip() + (_opts.coordinatesInDirections ? "@" + latLng.lat + "," + latLng.lng : "");
                 var displayAddress = location.get_address() + '<br/>' + location.get_city() + ', ' + location.get_state() + ' ' + location.get_zip() + (_opts.bubbleShowCoordinates ? "<br/>" + location.get_cords() : "");
                 var encodedAddress = encodeURIComponent(address).replace(/'/g, "%27");
-                var link = "<a href='http://maps.google.com/maps?saddr=&daddr=" + encodedAddress + "' target='_blank' class='mapit-bubble-directions'>Get Directions...</a>";
+                var link = "<a href='https://maps.google.com/maps?saddr=&daddr=" + encodedAddress + "' target='_blank' class='mapit-bubble-directions'>Get Directions...</a>";
                 var addressHtml = "<span class='mapit-bubble-title'>" + location.get_name() + "</span><br/><span class='mapit-bubble-address'>" + displayAddress + "</span>" + (location.get_showDirectionsLink() ? "<br/>" + link : "");
                 var locInfo = location.get_info();
                 var linkEleId = catId + "-loc" + locId + "-bubble-lnk";
@@ -2276,21 +2277,20 @@ mapit.utils = {
     },
     getBrowserType: function ()
     {
-        var browserName = "unknown";
 
-        if (jQuery.browser.webkit)
+        if (navigator.userAgent.indexOf("Chrome"))
         {
             browserName = "webkit";
         }
-        else if (jQuery.browser.opera)
+        else if (navigator.userAgent.indexOf("Opera"))
         {
             browserName = "opera";
         }
-        else if (jQuery.browser.msie)
+        else if (navigator.userAgent.indexOf("MSIE"))
         {
             browserName = "ie";
         }
-        else if (jQuery.browser.mozilla)
+        else if (navigator.userAgent.indexOf("Mozilla"))
         {
             browserName = "mozilla";
         }
@@ -2301,7 +2301,7 @@ mapit.utils = {
     {
         var browserName = "unknown";
 
-        if (jQuery.browser.webkit)
+        if (navigator.userAgent.indexOf("Chrome"))
         {
             browserName = "webkit";
 
@@ -2318,21 +2318,21 @@ mapit.utils = {
                 browserName = "webkit-iphone";
             }
         }
-        else if (jQuery.browser.opera)
+        else if (navigator.userAgent.indexOf("Opera"))
         {
             browserName = "opera";
         }
-        else if (jQuery.browser.msie)
+        else if (navigator.userAgent.indexOf("MSIE"))
         {
-            browserName = "ie" + jQuery.browser.version.split(".", 1)[0];
+            browserName = "ie" + navigator.userAgent.indexOf("Version").split(".", 1)[0];
         }
-        else if (jQuery.browser.mozilla)
+        else if (navigator.userAgent.indexOf("Mozilla"))
         {
             browserName = "mozilla";
 
             if (navigator.userAgent.match(/Firefox/i))
             {
-                var version = mapit.utils.parseInt(jQuery.browser.version.split(".", 1)[0], 0);
+                var version = mapit.utils.parseInt(navigator.userAgent.indexOf("Version").split(".", 1)[0], 0);
 
                 if (version >= 4)
                 {

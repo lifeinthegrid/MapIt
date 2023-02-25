@@ -21,6 +21,7 @@ div.title {
 td.title-links {white-space:nowrap;font-size:16px;text-align:center;}
 
 div.header {padding:8px 0px 8px 4px; font-size:24px ;	margin:0px 0px 5px 0px;}
+div.footer-credit {font-size:0.8em; color:Gray}
 div.code-block {background-color:#dfdfdf; padding:8px;border-radius: 15px;}
 span.tag-replace {color:#1A387E; font-weight:bold;text-decoration:underline;}
 div.sample-info {text-align:center; font-size:16px; line-height:28px;}
@@ -30,18 +31,18 @@ span#mapit-liteversion{color:maroon}
 span#mapit-webversion{color:#2E55B7}
 span.mapit-compression {font-size:14px}
 .css-overview {
-    vertical-align:top; 
-    padding:15px; 
-    padding-bottom:2px; 
-    border-radius:15px; 
-    border:1px solid silver; 
-    font-size:0.9em; 
+    vertical-align:top;
+    padding:15px;
+    padding-bottom:2px;
+    border-radius:15px;
+    border:1px solid silver;
+    font-size:0.9em;
     background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
     background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
     background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(5, #C4C4C4));
     background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);               
+    background-image: linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
 }
 
 /*Theme Page*/
@@ -55,11 +56,11 @@ div.demo-links  table td {padding: 6px}
 
 /*LIGHT BOX */
 #mapit-lightbox-shadow {
-    background:#000; 
-    opacity:0.8; 
-    filter:alpha(opacity=80); 
-    position:absolute; 
-    top:0px; 
+    background:#000;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    position:absolute;
+    top:0px;
     left:0px;
 	min-width:100%;
 	min-height:100%;
