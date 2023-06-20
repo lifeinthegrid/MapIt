@@ -1,22 +1,20 @@
-/* This style sheet is only used for styling the demos it is not requried for MapIt */
-body {font-family: 'Trebuchet MS', verdana, arial, sans-serif;  }
-h2 	{margin: 0px 0px 0px 3px; }
+
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+
+
+/* This style sheet is only used for styling the demos it is not required for MapIt */
+body {font-family: 'Trebuchet MS', verdana, arial, sans-serif; max-width:800px; margin: auto; padding:0 20px 0 20px  }
 *:focus { outline: 0 none; }
 a {color:#000;}
-a:hover {color:#000;}
-a, a:link, a:visited, a:hover, a:focus, a:active {
-	outline:0 none;
-	border-style:none;
-	noFocusLine: expression(this.onFocus=this.blur());
-}
-div.content {padding:10px 50px; line-height:24px; width:800px; margin:auto}
+a:hover {color:#444;}
+a, a:link, a:visited, a:hover, a:focus, a:active {outline:0 none; border-style:none;}
 div.title {
 	padding:5px 10px 5px 10px;
-	margin:0px 0px 10px 0px;
+	margin:20px 0px 10px 0px;
 	border:1px solid silver;
 	background-color:#fff;
 	border-radius:5px;
-	box-shadow: 8px 8px 5px #888;
+	box-shadow:2px 6px 8px #d4d3d3;
 }
 td.title-links {white-space:nowrap;font-size:16px;text-align:center;}
 
@@ -37,22 +35,8 @@ span.mapit-compression {font-size:14px}
     border-radius:15px;
     border:1px solid silver;
     font-size:0.9em;
-    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(5, #C4C4C4));
-    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
     background-image: linear-gradient(bottom, #FFFFFF 0%, #C4C4C4 500%);
 }
-
-/*Theme Page*/
-div.theme-switch {text-align:center; font-size:16px; background-color:#F8F8F8; border:1px solid silver; border-radius:5px; margin:20px 0px 8px 0px; }
-select#theme {font-size:16px; margin-bottom:4px}
-/* Index Page */
-div.sales-text { font-size:22px; font-weight:bold;   text-align:center; color:#555}
-div.demo-links {border:1px solid silver; border-radius:5px;}
-div.demo-links a {text-decoration: underline}
-div.demo-links  table td {padding: 6px}
 
 /*LIGHT BOX */
 #mapit-lightbox-shadow {
@@ -80,16 +64,24 @@ div.demo-links  table td {padding: 6px}
     border-radius:5px;
 }
 
-.jumbotron, .gray-mix{
-	border-radius: 5px; text-align: center;	padding:10px; margin-top:-10px;
-	color:#000; text-shadow: #dfdfdf 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
-}
 /* Custom page header */
 .header h3 {padding-bottom: 19px; margin-top: 0; margin-bottom: 0; line-height: 40px;}
+.header img  { height:25px; margin-top:-5px}
+.header a.logo-info {color:#000 !important; font-weight:bold; text-decoration: none;}
+.header a.git {text-decoration: none; color:#999; font-weight: normal;}
+.header a.git:hover {color:#777}
+
+.jumbotron {
+	text-align: center;
+	padding:10px 0 1px 0;
+	color:#fff; text-shadow: #222 0.1em 0.1em 0.2em; font-family: 'Ropa Sans', 'sans-serif';
+    background: linear-gradient(-45deg, #8a9fce, #411fb2, #5e136e);
+    background-size: 400% 400%;
+    animation: background-gradient-animator 25s ease infinite;
+}
+
+@keyframes background-gradient-animator {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}

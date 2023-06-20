@@ -4,7 +4,8 @@
 	<title>MapIt Pro - Theme Switcher</title>
 	<meta name="description" content="Create powerful maps with MapIt Pro. MapIt is A jQuery plugin powered by Google Maps." />
 	<meta name="keywords" content="jquery, maps, mapit, google, javascript, html5, plugin, mapping, global, pro" />
-    <meta name="author" content="lifeinthegrid.com">
+    <meta name="author" content="gridlife.io">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="../style.css" type="text/css" media="all" />
 
 	<!-- ==============================================
@@ -21,6 +22,9 @@
 	<script type="text/javascript" src="../script.js"></script>
 
 	<style type="text/css">
+		div.theme-switch {text-align:center; font-size:16px; margin:20px 0 20px 0; line-height: 28px;}
+		select#theme {font-size:16px; margin-bottom:4px}
+
 		/*OVERVIEW: To overide the base mapit.css  make
 		sure your style block is below the mapit.css link*/
 
@@ -42,175 +46,165 @@
 	</style>
 </head>
 <body>
-	<div class="content">
 
-		<div class="title">
-			<table>
-				<tr>
-					<td style="width:100%">
-						<h2>MapIt - Theme Switcher</h2>
-						<span style="margin-left:20px">View different jQuery themes applied to MapIt</span>
-					</td>
-					<td class="title-links">
-						<a href="../index.html">Home</a> |
-						<a class="mapit-configuration" href="data-pro/data-universities.xml">Map Data</a><br/>
-						<div id="mapit-version-mode"></div>
-					</td>
-				</tr>
-			</table>
-		</div>
+	<div class="title">
+		<table>
+			<tr>
+				<td style="width:100%">
+					<h2>MapIt - Theme Switcher</h2>
+					View different jQuery themes applied to MapIt<br/>
 
-		<div class="theme-switch">
-			<table>
-				<tr style="vertical-align:top;">
-					<td style="width:300px; white-space:nowrap; vertical-align:top">
-						<a href="//jqueryui.com/themeroller/" target="_blank" title="Create your own Theme in just minutes with ThemeRoller!">ThemeRoller Ready</a>&nbsp;
-						<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
-							<option>cupertino</option>
-							<option>black-tie</option>
-							<option>blitzer</option>
-							<option>dark-hive</option>
-							<option>dot-luv</option>
-							<option>eggplant</option>
-							<option>excite-bike</option>
-							<option>flick</option>
-							<option>hot-sneaks</option>
-							<option>humanity</option>
-							<option>le-frog</option>
-							<option>mint-choc</option>
-							<option>overcast</option>
-							<option>pepper-grinder</option>
-							<option>redmond</option>
-							<option>smoothness</option>
-							<option>south-street</option>
-							<option>start</option>
-							<option>sunny</option>
-							<option>swanky-purse</option>
-							<option>trontastic</option>
-							<option>ui-darkness</option>
-							<option>ui-lightness</option>
-							<option>vader</option>
-						</select>
-					</td>
-					<td style="width:450px;">
-                        <table align="center">
-                            <tr>
-                                <td><label for="amount">Cluster Range:</label></td>
-					            <td style="width:150px; padding-left:10px"><div id="slider-range-max" style="font-size:11px"></div></td>
-					            <td><input type="text" id="amount" style="font-weight:bold; border:1px solid silver; border-radius:3px; width: 30px; padding:3px" /></td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td style="width:300px;"><a class="mapit-show-lightbox" href="#"><b>How Does MapIt Work?</b></a></td>
-				</tr>
-			</table>
-		</div>
+				</td>
+				<td class="title-links">
+					<a href="../index.html">Demos</a> |
+					<a class="mapit-configuration" href="data-pro/data-universities.xml">Map Data</a><br/>
+					<div id="mapit-version-mode"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
 
+	<div class="theme-switch alert alert-light p-2">
 
-        <!-- How to LightBox -->
-        <div id="mapit-lightbox-panel" style="width:800px; line-height:15px;">
-            <h2>How Does MapIt Work?</h2><hr size="1" />
+		<a class="mapit-show-lightbox" href="#"><b>How Does MapIt Work?</b></a> <br/>
+		<a href="//jqueryui.com/themeroller/" target="_blank" title="Create your own Theme in just minutes with ThemeRoller!">ThemeRoller:</a>&nbsp;
+		<select id="theme" onchange="javascript:applyTheme(this.options[this.selectedIndex].text);">
+			<option>cupertino</option>
+			<option>black-tie</option>
+			<option>blitzer</option>
+			<option>dark-hive</option>
+			<option>dot-luv</option>
+			<option>eggplant</option>
+			<option>excite-bike</option>
+			<option>flick</option>
+			<option>hot-sneaks</option>
+			<option>humanity</option>
+			<option>le-frog</option>
+			<option>mint-choc</option>
+			<option>overcast</option>
+			<option>pepper-grinder</option>
+			<option>redmond</option>
+			<option>smoothness</option>
+			<option>south-street</option>
+			<option>start</option>
+			<option>sunny</option>
+			<option>swanky-purse</option>
+			<option>trontastic</option>
+			<option>ui-darkness</option>
+			<option>ui-lightness</option>
+			<option>vader</option>
+		</select>
 
-            <table cellpadding="8" style="font-size:20px; font-weight:bold">
-                <tr>
-                    <td>1. Install on Server</td>
-                    <td><span style="font-size:30px">&raquo;</span> </td>
-                    <td>2. Configure XML </td>
-                    <td><span style="font-size:30px">&raquo;</span> </td>
-                    <td>3. Hit refresh</td><td></td>
-                </tr>
-            </table>
-
-
-
-            <img src="../images/fig01-xml.png" alt="xml example" style="border:1px solid #000; width:98%; height:85%; box-shadow: 4px 4px 2px #888;" />
-               <br />  <br />
-
-            <div align="center">
-			    <div style="background-color:#efefef; border-radius:5px; border:1px solid silver; width:200px; padding:5px;">
-				    <b><a class="mapit-close-lightbox" href="#">Close Window</a></b>
-			    </div>
-            </div><br />
-        </div>
-
-		<!-- ==============================================
-		REQUIRED FOR MAPIT. -->
-		<div id="map"></div><br /><br />
-		<script type="text/javascript">
-		    var maps = null;
-
-		    jQuery(document).ready(function ()
-		    {
-		        $("#slider-range-max").slider({
-		            range: "max", min: 0, max: 400, step: 25, value: 0,
-		            slide: function (event, ui) { $("#amount").val(ui.value); },
-		            stop: function (event, ui) { applyClustering(ui.value); }
-		        });
-
-		        $("#amount").val($("#slider-range-max").slider("value"));
-
-		        drawMap();
-            });
-
-		    function drawMap(allowClustering, clusterOpts)
-		    {
-		        //This call is all that is required for a basic MapIt install
-		        maps = jQuery("#map").mapit(
-				{
-				    xmlConfig: "data-pro/data-universities.xml",
-				    cacheXml: false,
-				    markerClustererOptions: (clusterOpts || null),
-				    allowClustering: (allowClustering || false)
-				});
-		    }
-
-            function applyTheme(theme)
-            {
-                if (maps)
-                {
-                    maps.each(function ()
-                    {
-                        this.mapit.applyTheme(theme);
-                        return;
-                    });
-                }
-            }
-
-            function applyClustering(clusterSize)
-            {
-                if (maps)
-                {
-                    maps.each(function ()
-                    {
-                        var clusterOpts = { gridSize: (clusterSize || 0) };
-
-                        if (clusterSize == 0)
-                        {
-                            if (this.mapit.get_options().allowClustering == true)
-                            {
-                                // redraw the map with clustering disabled
-                                drawMap(false);
-                            }
-                        }
-                        else if (this.mapit.get_options().allowClustering == false)
-                        {
-                            // redraw the map with clustering enabled
-                            drawMap(true, clusterOpts);
-                        }
-                        else
-                        {
-                            // clustering already enabled so just redraw the clusters
-                            this.mapit.applyClusterOptions(clusterOpts);
-                        }
-
-                        return;
-                    });
-                }
-            }
-		</script>
-		<!-- ============================================== -->
+		<table class="text-center mx-auto">
+			<tr>
+				<td><label for="amount">Cluster Range:</label></td>
+				<td style="width:150px; padding-left:10px"><div id="slider-range-max" style="font-size:11px"></div></td>
+				<td><input type="text" id="amount" style="font-weight:bold; border:1px solid silver; border-radius:3px; width: 30px; padding:3px" /></td>
+			</tr>
+		</table>
 
 	</div>
+
+
+	<!-- How to LightBox -->
+	<div id="mapit-lightbox-panel" style="width:800px; line-height:15px;">
+		<h2>How Does MapIt Work?</h2><hr size="1" />
+
+		<table cellpadding="8" style="font-size:20px; font-weight:bold">
+			<tr>
+				<td>1. Install on Server</td>
+				<td><span style="font-size:30px">&raquo;</span> </td>
+				<td>2. Configure XML </td>
+				<td><span style="font-size:30px">&raquo;</span> </td>
+				<td>3. Hit refresh</td><td></td>
+			</tr>
+		</table>
+
+
+
+		<img src="../images/fig01-xml.png" alt="xml example" style="border:1px solid #000; width:98%; height:85%; box-shadow: 4px 4px 2px #888;" />
+			<br />  <br />
+
+		<div class="text-center mx-auto w-100 m-5">
+			<b><a class="btn btn-dark mapit-close-lightbox" href="#">Close Window</a></b>
+		</div>
+	</div>
+
+	<!-- ==============================================
+	REQUIRED FOR MAPIT. -->
+	<div id="map"></div><br /><br />
+	<script type="text/javascript">
+		var maps = null;
+
+		jQuery(document).ready(function ()
+		{
+			$("#slider-range-max").slider({
+				range: "max", min: 0, max: 400, step: 25, value: 0,
+				slide: function (event, ui) { $("#amount").val(ui.value); },
+				stop: function (event, ui) { applyClustering(ui.value); }
+			});
+
+			$("#amount").val($("#slider-range-max").slider("value"));
+
+			drawMap();
+		});
+
+		function drawMap(allowClustering, clusterOpts)
+		{
+			//This call is all that is required for a basic MapIt install
+			maps = jQuery("#map").mapit(
+			{
+				xmlConfig: "data-pro/data-universities.xml",
+				cacheXml: false,
+				markerClustererOptions: (clusterOpts || null),
+				allowClustering: (allowClustering || false)
+			});
+		}
+
+		function applyTheme(theme)
+		{
+			if (maps)
+			{
+				maps.each(function ()
+				{
+					this.mapit.applyTheme(theme);
+					return;
+				});
+			}
+		}
+
+		function applyClustering(clusterSize)
+		{
+			if (maps)
+			{
+				maps.each(function ()
+				{
+					var clusterOpts = { gridSize: (clusterSize || 0) };
+
+					if (clusterSize == 0)
+					{
+						if (this.mapit.get_options().allowClustering == true)
+						{
+							// redraw the map with clustering disabled
+							drawMap(false);
+						}
+					}
+					else if (this.mapit.get_options().allowClustering == false)
+					{
+						// redraw the map with clustering enabled
+						drawMap(true, clusterOpts);
+					}
+					else
+					{
+						// clustering already enabled so just redraw the clusters
+						this.mapit.applyClusterOptions(clusterOpts);
+					}
+
+					return;
+				});
+			}
+		}
+	</script>
 
 </body>
 </html>

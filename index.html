@@ -4,57 +4,61 @@
 	<title>MapIt: Maps Made Your Way!</title>
 	<meta name="description" content="Create powerful maps with MapIt Lite and Pro. MapIt is A jQuery plugin powered by Google Maps." />
 	<meta name="keywords" content="jquery, maps, mapit, google, javascript, html5, plugin, mapping, global" />
-    <meta name="author" content="lifeinthegrid.com">
-
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<link href='//fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+    <meta name="author" content="gridlife.io">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
-
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="../source/jquery.mapit.js"></script>
 </head>
 <body>
 
-<div class="content">
-
-	<div class="header">
-		<a href="//lifeinthegrid.com"><img src="images/logo-01.png" alt="" class="pull-right" style="height:80px; margin:20px 20px 0px 0px"/></a>
-		<h3 class="text-muted"><a href="//lifeinthegrid.github.io">lifeinthegrid.github.io</a>/mapit <i class="fa fa-github"></i></h3>
+	<!-- HEADER -->
+	<div class="header d-flex">
+		<div class="p-2 w-100 fs-5">
+			<a class="logo-info" href="//gridlife.io">
+				<img src="images/logo-01.png"/>&nbsp;GridLife.io
+			</a>
+		</div>
+		<div class="p-2 flex-shrink-1 text-nowrap fs-6">
+			<a class="git" href="//lifeinthegrid.github.io">
+				<i class="fa-brands fa-github fa-fw"></i>lifeinthegrid.github.io
+			</a>
+		</div>
 	</div>
 
-	<div class="jumbotron gray-mix">
-		<h1>MapIt...</h1>
-		<p class="lead" style="font-size:26px">Maps Made Your Way!</p>
+	<!-- JUMBOTRON -->
+	<div class="jumbotron rounded-3 shadow">
+		<h1 class="display-5"> MapIt</h1>
+		<p class="fs-2">Maps Made Your Way!</p>
 	</div>
 
-	<table>
+	<!-- OVERVIEW -->
+	<table class="my-4">
 		<tr>
-			<td><a href="//lifeinthegrid.com/mapit"><img src="images/pro-medium.png" alt="mapit" style="margin-right:10px; width:130px" /></a></td>
+			<td>
+				<a href="//lifeinthegrid.com/mapit"><img src="images/logo-mapit1.png" alt="mapit" style="margin:40px 10px 0 0; width:125px" /></a>
+			</td>
 			<td valign="top">
-
-				<div class="sales-text">
+				<h4 class="text-center">
 					Simplified, Clean &amp; Customizable
-				</div><br />
-				<span style="font-size:24px; font-weight:bold">M</span>apIt is 100% Free jQuery plug-in that interacts with the Google Maps API.
-				MapIt groups and organize all your locations into an easy to use interface.  All the heavy lifting is done so you don't have to learn the Google API.
-				Just edit the XML configuration file and your ready to share your locations.  <br/><br/>
-				<button type="button" class="btn btn-success btn-sm pull-right"  onclick="window.location='//lifeinthegrid.com/mapit'">Learn More...</button>
+				</h4>
+				MapIt is 100% free jQuery plug-in that interacts with Google Maps API. MapIt groups and organize locations into an easy
+				to use interface.  All the heavy lifting is done so you don't have to learn the Google API. Just edit the XML config file
+				and your ready to share your locations.
 			</td>
 		</tr>
 	</table><br/>
 
-
-
-	<div class="demo-links">
-	<table class="table table-striped table-hover table-responsive">
-		<tr style="font-size:18px; font-weight:bold;" class="active">
-			<td style="width:160px">DEMOS</td>
-			<td style="width:130px">MAP TYPE</td>
-			<td style="width:600px">DESCRIPTION</td>
-		</tr>
+	<!-- DEMO LINKS-->
+	<table class="table table-striped">
+		<thead class="table-secondary">
+			<tr class="active">
+				<th>DEMOS</th>
+				<th>MAP TYPE</th>
+				<th>DESCRIPTION</th>
+			</tr>
+		</thead>
 		<tr>
 			<td><a href="demo/theme-switch-demo.html">Theme Switcher</a></td>
 			<td>Universities</td>
@@ -81,35 +85,29 @@
 			<td>Locate the MapIt style elements</td>
 		</tr>
 		<tr>
-			<td><a href="demo/query-string.html">Query String Demo</a></td>
+			<td class="text-nowrap"><a href="demo/query-string.html">Query String Demo</a></td>
 			<td>Coffee Shops</td>
 			<td>Pass query strings to MapIt</td>
 		</tr>
 	</table>
-	</div>
-   <hr size="1" />
 
-	<table style="width:100%; font-size:24px">
+	<div class="alert alert-light text-center fs-6" role="alert">
+		The message:
+		<i>This page can't load Google Maps correctly.</i><br/>
+		Will not show after applying the Google map API key.
+	</div>
+
+	<!-- FOOTER LINKS-->
+	<table class="my-3 w-100">
 		<tr>
 			<td style="text-align:center">
-				<a href="//lifeinthegrid.github.io">Main</a> |
-				<a href="//github.com/lifeinthegrid/mapit" target="_blank">Download</a> |
-				<a href="//lifeinthegrid.github.io/demos/mapit/docs/mapit-user-guide.pdf" target="_blank">Docs</a> |
-				<a href="//www.youtube.com/playlist?list=PLDEA41530A52604A1" target="_blank">Videos</a>
+				<a href="//github.com/lifeinthegrid/mapit">download</a> |
+				<a href="docs/mapit-user-guide.pdf" target="_blank">docs</a> |
+				<a href="//www.youtube.com/playlist?list=PLDEA41530A52604A1" target="_blank">videos</a>
 				<br/>
 			</td>
 		</tr>
-	</table><br />
-
-    <div class="footer-credit">
-		<i class="pull-right">Authors:
-			<a href="//www.linkedin.com/in/ryandheideman" target="_blank">Ryan Heideman</a>,
-			<a href="//www.linkedin.com/in/corylamle/" target="_blank">Cory Lamle</a>
-		</i> <br/>
-        <i class="pull-right"><a href="//lifeinthegrid.com/labs" style="color:gray" target="_blank">lifeinthegrid</a> &copy;</i>
-    </div>
-
-</div>
+	</table>
 
 </body>
 </html>

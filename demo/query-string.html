@@ -4,69 +4,73 @@
 	<title>MapIt Pro - Theme Switcher</title>
 	<meta name="description" content="Create powerful maps with MapIt Pro. MapIt is A jQuery plugin powered by Google Maps." />
 	<meta name="keywords" content="jquery, maps, mapit, google, javascript, html5, plugin, mapping, global, pro" />
-    <meta name="author" content="lifeinthegrid.com">
+    <meta name="author" content="gridlife.io">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="../style.css" type="text/css" media="all" />
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="../script.js"></script>
 	<script type="text/javascript" src="../source/jquery.mapit.js" id="mapit-source"></script>
 </head>
 <body>
-	<div class="content">
 
-		<div class="title">
-			<table>
-				<tr>
-					<td style="width:100%">
-						<h2>MapIt - Query String</h2>
-						<span style="margin-left:20px">View different jQuery themes applied to MapIt</span>
-					</td>
-					<td class="title-links">
-						<a href="../index.html">Home</a>
-						<div id="mapit-version-mode"></div>
-					</td>
-				</tr>
-			</table>
-		</div><br/>
+	<div class="title">
+		<table>
+			<tr>
+				<td style="width:100%">
+					<h2>MapIt - Query String</h2>
+					<span style="margin-left:20px">View different jQuery themes applied to MapIt</span>
+				</td>
+				<td class="title-links">
+					<a href="../index.html">Demos</a>
+					<div id="mapit-version-mode"></div>
+				</td>
+			</tr>
+		</table>
+	</div><br/>
 
-		<div style="margin-left:40px; width:100%">
-			<p>
-			MapIt will accept several different query strings.  Just pass these in the URL and map it will take care of the rest.<br/>
-			<i>Note: Toggle the values on the next page to see different results.</i>
-			</p>
+	<div style="width:100%">
+		<p>
+		MapIt accepts different query strings.  Pass these in the URL and map it will take care of the rest.<br/>
+		<i>Note: Toggle the values on the next page to see different results.</i>
+		</p>
 
 
-			<table cellpadding="5" cellspacing="0">
-				<tr style="font-size:18px; font-weight:bold; background-color:#efefef">
-					<td style="width:120px">Value</td>
-					<td style="width:320px">Description</td>
-					<td style="width:200px">Example</td>
-					<td style="width:200px">Link Example</td>
-				</tr>
-				<tr>
-					<td>mapitloc</td>
-					<td>The default location to display by name</td>
-					<td>?mapitloc=sunset boulevard</td>
-					<td><a href="multiple-map-demo.html?mapitloc=sunset%20boulevard">California Sunset Boulevard</a></td>
-				</tr>
-				<tr>
-					<td>mapitzoom</td>
-					<td>The zoom level</td>
-					<td>?mapitzoom=5</td>
-					<td><a href="multiple-map-demo.html?mapitzoom=5">Zoom to level 5</a></td>
-				</tr>
-				<tr>
-					<td>mapitpanx</td>
-					<td>Number to pan horizontally</td>
-					<td>?mapitpanx=5</td>
-					<td><a href="multiple-map-demo.html?mapitpanx=5">Pan left/right 5</a></td>
-				</tr>
-				<tr>
-					<td>mapitpany</td>
-					<td>Number to pan vertically</td>
-					<td>?mapitpany=5</td>
-					<td><a href="multiple-map-demo.html?mapitpany=5">Pan up/down 5</a></td>
-				</tr>
-			</table>
+		<table class="table table-striped table-responsive">
+			<tr style="font-size:18px; font-weight:bold; background-color:#efefef">
+				<td>Value</td>
+				<td>Description</td>
+				<td>Example</td>
+				<td>Link Example</td>
+			</tr>
+			<tr>
+				<td>mapitloc</td>
+				<td>The default location to display by name</td>
+				<td>?mapitloc=sunset boulevard</td>
+				<td><a href="multiple-map-demo.html?mapitloc=sunset%20boulevard">California Sunset Boulevard</a></td>
+			</tr>
+			<tr>
+				<td>mapitzoom</td>
+				<td>The zoom level</td>
+				<td>?mapitzoom=5</td>
+				<td><a href="multiple-map-demo.html?mapitzoom=5">Zoom to level 5</a></td>
+			</tr>
+			<tr>
+				<td>mapitpanx</td>
+				<td>Number to pan horizontally</td>
+				<td>?mapitpanx=5</td>
+				<td><a href="multiple-map-demo.html?mapitpanx=5">Pan left/right 5</a></td>
+			</tr>
+			<tr>
+				<td>mapitpany</td>
+				<td>Number to pan vertically</td>
+				<td>?mapitpany=5</td>
+				<td><a href="multiple-map-demo.html?mapitpany=5">Pan up/down 5</a></td>
+			</tr>
+		</table>
+
+
+		<div class="mt-5 text-center">
+			<b>Click link examples to see demo</b>
 		</div>
 
 	</div>

@@ -2,7 +2,7 @@
 <mapit
     accordion-animation="true"
     accordion-autoselect="true"
-    accordion-showsublinks="true" 
+    accordion-showsublinks="true"
     bubble-center="true"
     bubble-showcoordinates="false"
     bubble-showatstart="true"
@@ -19,17 +19,17 @@
     search-text="Search by College"
     showdirectionslink="false"
     startcordinates="33.471545,-111.956177"
-    title="Universities Across Arizona (Pro)"
+    title="Universities Across Arizona"
     zoomlevel="10">
 
   <!--  ======================================================================================
-    TEMPLATES: Templates are common reusable layouts that you can used for all or some of 
+    TEMPLATES: Templates are common reusable layouts that you can used for all or some of
     your locations.  Define a template once and then reuse it in your location tags with the
     attributes: bubble-templateid and details-templateid as attributes of the category or location tags
         For the bubble window use: bubble-templateid="myidname"
         For the details view use:  details-templateid="myidname"   -->
   <templates>
-      
+
     <!-- FULL TEMPLATE EXAMPLE: -->
     <template id="FullBubbleTemplate">
       <tabs>
@@ -45,7 +45,7 @@
                     {{city}}, {{province}} {{code}}
                     </td>
                 </tr>
-              </table> 
+              </table>
              <center>Visit this college  <a href="{{maincampuslink}}" target="_blank">website</a></center>
           ]]>
         </tab>
@@ -75,7 +75,7 @@
         </table>
         ]]>
     </template>
-      
+
 
      <!-- SIMPLE TEMPLATE EXAMPLE: -->
     <template id="SimpleBubbleTemplate">
@@ -94,7 +94,7 @@
         {{links}}
       ]]>
      </template>
-      
+
 
     <!-- CUSTOM: -->
     <template id="FlagStaffDetailsTemplate">
@@ -110,31 +110,31 @@
                     {{city}}, {{province}} {{code}}
                     </td>
                 </tr>
-                </table> 
+                </table>
                 ]]>
             </tab>
             <tab name="History">
                 <![CDATA[  {{info}}  ]]>
             </tab>
             <tab name="Links">
-                <![CDATA[ 
-                    {{links}}  
+                <![CDATA[
+                    {{links}}
                     <center style='font-size:12px'><i>Use the special {links} markup to auto generate your links </i></center>
                 ]]>
             </tab>
         </tabs>
     </template>
-      
+
   </templates>
   <!-- ======================================================================================
   END TEMPLATES -->
-    
-    
+
+
 
   <!--  ================
   CATEGORY: CHANDLER -->
-  <category 
-      name="Chandler"  
+  <category
+      name="Chandler"
       isdefault="true">
     <locations>
         <location
@@ -240,7 +240,7 @@
                 name="University Life"
                 url="http://nau.edu/about/life/"
                 target="_blank" />
-        </links>          
+        </links>
       </location>
     </locations>
   </category>
